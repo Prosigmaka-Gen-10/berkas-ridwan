@@ -7,4 +7,4 @@ const MemberDetails = () => {
     )
 }
 
-export default MemberDetails
+export default MemberDetails;

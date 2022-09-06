@@ -5,9 +5,9 @@ import './index.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import App from './App';
-import Home from './pages/Home';
-import Absensi from './pages/Absensi';
-import MemberDetails from './pages/Member/MemberDetails';
+import Home from './components/pages/Home';
+import Absensi from './components/pages/Absensi';
+import MemberDetails from './components/pages/Member/MemberDetails';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

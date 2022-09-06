@@ -9,22 +9,22 @@ const Navbar = () => {
             </NavLink>
             <span> | </span>
 
-            <NavLink to="">
+            <NavLink to="absensi">
                 ABSENSI
             </NavLink>
             <span> | </span>
 
-            <NavLink to="/">
+            <NavLink to="sepatu">
                 SEPATU
             </NavLink>
             <span> | </span>
 
-            <NavLink to="/">
+            <NavLink to="produk">
                 PRODUK
             </NavLink>
             <span> | </span>
 
-            <NavLink to="/">
+            <NavLink to="member">
                 MEMBER
             </NavLink>
             <span> | </span>

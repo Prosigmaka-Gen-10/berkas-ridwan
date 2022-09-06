@@ -1,5 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
-const Shoess = () => {
+const Sepatu = () => {
   return (
     <div>
       <h1>Sepatu</h1>
@@ -13,4 +13,4 @@ const Shoess = () => {
     </div>
   );
 };
-export default Shoess;
+export default Sepatu;
