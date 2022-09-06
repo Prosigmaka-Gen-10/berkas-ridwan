@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import reportWebVitals from './reportWebVitals';
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import App from './App';
 import Home from './pages/Home';
-import About from './pages/About';
-import Sejarah from './pages/About/Sejarah';
-import Kontak from './pages/About/Kontak';
+import Absensi from './pages/Absensi';
+import MemberDetails from './pages/Member/MemberDetails';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,17 +17,21 @@ root.render(
         <Route path="/" element={<App />}>
 
           <Route index element={<Home />} />
-          <Route path="about" element={<About />} >
-            <Route path='sejarah' element={<Sejarah />} />
-            <Route path='kontak' element={<Kontak />} />
+          <Route path="absensi" element={<Absensi />} />
+          <Route path="pilih" element={<Pilih />} />
+          <Route path="sepatu" element={<Sepatu />} >
+            <Route path='terbaru' element={<Terbaru />} >
+              <Route path='produk' element={<Produk />} />
+            </Route>
+            <Route path='termurah' element={<Termurah />} >
+              <Route path='produk' element={<Produk />} />
+            </Route>
+          </Route>
+          <Route path="member" element={<Member />} >
+            <Route path=':memberId' element={<MemberDetails />} />
           </Route>
         </Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

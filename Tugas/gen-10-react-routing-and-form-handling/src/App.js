@@ -1,17 +1,12 @@
-import './App.css';
-
-import { Outlet } from 'react-router-dom'
+import "./App.css";
+import { Outlet } from "react-router-dom";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
   return (
     <div className="App">
-      <h1>Selamat Datang!</h1>
-
-      <hr />
-
+      <Navbar />
       <Outlet />
-
-      <h1>Selamat Tinggal!</h1>
     </div>
   );
 }

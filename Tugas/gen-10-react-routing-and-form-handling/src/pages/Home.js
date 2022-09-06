@@ -1,13 +1,19 @@
-import React, { Component } from 'react'
-import { Routes, Route, Link } from 'react-router-dom'
+import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
-export default class Home extends Component {
-	render () {
-		return <>
-			<p>Ini Home</p>
-			<Link to="/about">
-				Pindah ke halaman about
-			</Link>
-		</>
-	}
-}
+const Home = () => {
+	const navigate = useNavigate();
+	return (
+		<div>
+			<h1>
+				TAMPILAN UTAMA
+			</h1>
+			<br/>
+			<button onClick={() => navigate("Pilih")}>
+				TAMBAH BARANG
+			</button>
+		</div>
+	);
+};
+
+export default Home;
