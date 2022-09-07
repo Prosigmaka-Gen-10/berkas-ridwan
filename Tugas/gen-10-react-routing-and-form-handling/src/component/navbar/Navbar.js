@@ -9,20 +9,16 @@ const Navbar = () => {
             Home
         </NavLink>
         <span> | </span>
-        <NavLink to="about">
-            About
+        <NavLink to="absensi">
+            Absensi
         </NavLink>
         <span> | </span>
         <NavLink to="product">
             Product
         </NavLink>
         <span> | </span>
-        <NavLink to="list-produk">
-            List Product
-        </NavLink>
-        <span> | </span>
-        <NavLink to="users">
-            Users
+        <NavLink to="members">
+            Members
         </NavLink>
     </nav>
   )

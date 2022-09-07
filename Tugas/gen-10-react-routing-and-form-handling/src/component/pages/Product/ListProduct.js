@@ -4,15 +4,15 @@ export default function ListProduct() {
   const Product = [
     {
       id: 1,
-      nama: "Jamtangan",
+      nama: "Sepatu Pantofel",
     },
     {
       id: 2,
-      nama: "Baju",
+      nama: "Sepatu Kets",
     },
     {
       id: 3,
-      nama: "Celana",
+      nama: "Sepatu Warior",
     },
   ];
   return (

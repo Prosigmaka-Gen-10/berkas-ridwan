@@ -1,30 +1,30 @@
 import { Link, Outlet, useSearchParams } from "react-router-dom";
 
-export default function Users() {
+export default function Members() {
   const [searchParams, setSearchParams] = useSearchParams();
-  const showActiveUsers = searchParams.get("filter") === "active";
-  const users = [
+  const showActiveMembers = searchParams.get("filter") === "active";
+  const members = [
     {
       id: 1,
-      nama: "Trias",
+      nama: "Bambang I",
     },
     {
       id: 2,
-      nama: "Iqbal",
+      nama: "Bambang II",
     },
     {
       id: 3,
-      nama: "Alfan",
+      nama: "Bambang III",
     },
   ];
 
   return (
     <div>
-      <h1>Data User</h1>
+      <h1>Daftar Member</h1>
       <p>Use Params</p>
       <ul>
-        {users.map((item) => (
-          <Link to={`/users/${item.id}`} key={item.id}>
+        {members.map((item) => (
+          <Link to={`/members/${item.id}`} key={item.id}>
             <li>{item.nama}</li>
           </Link>
         ))}
@@ -34,15 +34,15 @@ export default function Users() {
       <div>
         <div>
           <button onClick={() => setSearchParams({ filter: "active" })}>
-            Active Users
+            Active Members
           </button>
           <span>  </span>
-          <button onClick={() => setSearchParams({})}>Reset Filters</button>
+          <button onClick={() => setSearchParams({})}>Reset</button>
         </div>
-        {showActiveUsers ? (
-          <h3>Show Active Users</h3>
+        {showActiveMembers ? (
+          <h3>List Active Members</h3>
         ) : (
-          <h3>Select to Active Users</h3>
+          <h3>Select to Active Members</h3>
         )}
       </div>
     </div>

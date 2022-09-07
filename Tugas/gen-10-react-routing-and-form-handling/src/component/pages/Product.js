@@ -6,9 +6,9 @@ const Products = () => {
       {/* <input placeholder="Search Products" type="search" /> */}
       <br/>
       <nav>
-        <Link to="featured">Featured</Link>
+        <Link to="list-produk">Daftar Produk</Link>
         <span> | </span>
-        <Link to="new">new</Link>
+        <Link to="detail-product">Detail Produk</Link>
       </nav>
       <Outlet />
     </div>
