@@ -7,8 +7,8 @@ const Absensi = () => {
     const [gender, setGender] = useState();
     const [spirit, setSpirit] = useState();
 
-    function handleInputNama (entry) {
-        setNama(entry.target.value)
+    function handleInputNama (event) {
+        setNama(event.target.value)
     }
 
     function handleSubmit () {
