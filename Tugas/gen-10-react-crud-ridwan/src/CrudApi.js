@@ -137,11 +137,11 @@ export default function CrudApi () {
 			<label>
 				<input
 				type="radio"
-				value="f"
+				value="Food"
 				name="type"
-				value={formInput.type}
+				// value={formInput.type}
 				onChange={(event) => handleInput(event, 'type')}
-				checked={type === "f" ? true : false}
+				checked={formInput.type === "Food" ? true : false}
 				/>
 				Food
 			</label>
@@ -150,11 +150,11 @@ export default function CrudApi () {
 			<label>
 				<input
 				type="radio"
-				value="d"
+				value="Drink"
 				name="type"
-				value={formInput.type}
+				// value={formInput.type}
 				onChange={(event) => handleInput(event, 'type')}
-				checked={type === "d" ? true : false}
+				checked={formInput.type === "Drink" ? true : false}
 				/>
 				Drink
 			</label>

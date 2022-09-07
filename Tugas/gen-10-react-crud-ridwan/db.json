@@ -1,13 +1,14 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Torabika",
-      "price": 1000
+      "name": "Indomie Goreng",
+      "type": "Food",
+      "price": "4000",
+      "id": 1
     },
     {
-      "name": "Pocari Sweet",
-      "type": "",
+      "name": "Pocari Sweat",
+      "type": "Drink",
       "price": "8000",
       "id": 2
     }
