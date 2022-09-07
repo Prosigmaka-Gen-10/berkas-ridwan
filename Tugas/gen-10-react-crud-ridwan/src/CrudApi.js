@@ -17,7 +17,7 @@ export default function CrudApi () {
 	async function getProductList () {
 		try {
 			setIsLoading(true)
-			const response = await axios.get('http://localhost:3004/products')
+			const response = await axios.get('http://localhost:3009/products')
 
 			console.log(response.data)
 			setProducts(response.data)
@@ -47,7 +47,7 @@ export default function CrudApi () {
 	function createProduct () {
 		setIsLoading(true)
 		axios
-			.post('http://localhost:3004/products', formInput)
+			.post('http://localhost:3009/products', formInput)
 			.then(() => {
 				getProductList()
 			})
@@ -63,7 +63,7 @@ export default function CrudApi () {
 	function updateProduct () {
 		setIsLoading(true)
 		axios
-			.put('http://localhost:3004/products/' + formInput.id, formInput)
+			.put('http://localhost:3009/products/' + formInput.id, formInput)
 			.then(() => {
 				getProductList()
 			})
@@ -79,7 +79,7 @@ export default function CrudApi () {
 	function deleteProduct (productId) {
 		setIsLoading(true)
 		axios
-			.delete('http://localhost:3004/products/' + productId)
+			.delete('http://localhost:3009/products/' + productId)
 			.then(() => {
 				getProductList()
 			})
