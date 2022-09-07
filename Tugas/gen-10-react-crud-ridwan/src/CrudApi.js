@@ -6,7 +6,7 @@ import Spinner from './Spinner'
 export default function CrudApi () {
 	const originalForm = {
 		name: '',
-		productSeries: '',
+		type: '',
 		price: '',
 	}
 
@@ -130,6 +130,31 @@ export default function CrudApi () {
 					onChange={event => handleInput(event, 'price')} />
 			</label>
 
+			<br />
+			<br />
+			Tipe Produk: <br />
+			<label>
+				<input
+				type="radio"
+				value="f"
+				name="type"
+				onChange={(event) => handleInput(event, 'type')}
+				checked={type === "fl" ? true : false}
+				/>
+				Food
+			</label>
+			&nbsp;&nbsp;
+			<label>
+				<input
+				type="radio"
+				value="d"
+				name="type"
+				onChange={(event) => handleInput(event, 'type')}
+				checked={type === "d" ? true : false}
+				/>
+				Drink
+			</label>
+
 			<br /><br />
 
 			<button>
@@ -143,7 +168,7 @@ export default function CrudApi () {
 		<ul>
 			{products.map(product =>
 				<li key={product.id}>
-					{product.name} | Rp. {product.price}
+					{product.name} | Rp. {product.price} | {product.type}
 
 					&nbsp;&nbsp;
 					<button onClick={() => prepareUpdate(product)}>
