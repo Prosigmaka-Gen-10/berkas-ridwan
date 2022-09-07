@@ -13,6 +13,7 @@ export default function CrudApi () {
 	const [products, setProducts] = useState([])
 	const [formInput, setFormInput] = useState({...originalForm})
 	const [isLoading, setIsLoading] = useState(true)
+	const [type, setType] = useState();
 
 	async function getProductList () {
 		try {
@@ -138,17 +139,20 @@ export default function CrudApi () {
 				type="radio"
 				value="f"
 				name="type"
+				value={formInput.type}
 				onChange={(event) => handleInput(event, 'type')}
-				checked={type === "fl" ? true : false}
+				checked={type === "f" ? true : false}
 				/>
 				Food
 			</label>
+
 			&nbsp;&nbsp;
 			<label>
 				<input
 				type="radio"
 				value="d"
 				name="type"
+				value={formInput.type}
 				onChange={(event) => handleInput(event, 'type')}
 				checked={type === "d" ? true : false}
 				/>

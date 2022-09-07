@@ -4,6 +4,12 @@
       "id": 1,
       "name": "Torabika",
       "price": 1000
+    },
+    {
+      "name": "Pocari Sweet",
+      "type": "",
+      "price": "8000",
+      "id": 2
     }
   ]
 }
