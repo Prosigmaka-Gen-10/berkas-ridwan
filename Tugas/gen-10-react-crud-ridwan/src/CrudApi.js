@@ -6,7 +6,8 @@ import Spinner from './Spinner'
 export default function CrudApi () {
 	const originalForm = {
 		name: '',
-		price: ''
+		productSeries: '',
+		price: '',
 	}
 
 	const [products, setProducts] = useState([])
