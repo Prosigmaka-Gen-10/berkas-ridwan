@@ -1,0 +1,54 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "article_title": "Presiden Gigit Ayam",
+      "article_content": "Lorem ipsum dolor sir amet. Lorem ipsum dolor sir amet. Lorem ipsum dolor sir amet. Lorem ipsum dolor sir amet. ",
+      "article_publish_date": "2022-09-01",
+      "categoryId": 1
+    },
+    {
+      "article_title": "DPR Gigit Uang Rakyat",
+      "article_content": "canda pak",
+      "article_publish_date": "2022-09-09",
+      "id": 3,
+      "categoryId": 2
+    },
+    {
+      "article_title": "Coba artikel pakai kategori",
+      "article_content": "test konten",
+      "article_publish_date": "2022-09-09",
+      "categoryId": 2,
+      "id": 4
+    },
+    {
+      "article_title": "Ramadhan sudah lewat",
+      "article_content": "sampai ketemu tahun depan",
+      "article_publish_date": "2022-09-10",
+      "categoryId": 2,
+      "id": 5
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "category_name": "Politik"
+    },
+    {
+      "id": 2,
+      "category_name": "Agama"
+    },
+    {
+      "id": 3,
+      "category_name": "Kemasyarakatan"
+    },
+    {
+      "category_name": "Otomotif",
+      "id": 4
+    },
+    {
+      "category_name": "pakaians dalam",
+      "id": 5
+    }
+  ]
+}
