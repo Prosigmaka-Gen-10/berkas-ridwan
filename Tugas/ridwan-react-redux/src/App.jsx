@@ -2,6 +2,8 @@ import store from "./store"
 
 import Merk from "./Merk"
 import Price from "./Price"
+import MerkLaptop from "./MerkLaptop"
+import PriceLaptop from "./PriceLaptop"
 
 export default function App() {
   function showStore() {
@@ -19,6 +21,14 @@ export default function App() {
     <br /><hr /><br />
 
     <Price />
+
+    <br /><hr /><br />
+
+    <MerkLaptop />
+    
+    <br /><hr /><br />
+
+    <PriceLaptop />
 
   </>
 }

@@ -1,6 +1,6 @@
 export const initialState = {
 	merk: 'SAMSUNG',
-	price: 1000000
+	price: "1.000.000"
 }
 
 export default function phoneReducer(state = initialState, action) {
@@ -13,19 +13,4 @@ export default function phoneReducer(state = initialState, action) {
 			return state
 	}
 
-	// if (action.type === 'changeMerk') {
-	// 	return {
-	// 		...state,
-	// 		merk: action.value
-	// 	}
-	// }
-
-	// if (action.type === 'changePrice') {
-	// 	return {
-	// 		...state,
-	// 		price: action.value
-	// 	}
-	// }
-
-	// return state
 }
