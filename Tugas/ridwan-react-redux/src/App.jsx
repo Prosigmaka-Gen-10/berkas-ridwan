@@ -12,7 +12,6 @@ export default function App() {
     <h1>Ridwan's React-Redux</h1>
     <button onClick={showStore}>Show My Store</button>
 
-
     <br /><hr /><br />
 
     <Merk />
@@ -20,5 +19,6 @@ export default function App() {
     <br /><hr /><br />
 
     <Price />
+    
   </>
 }
