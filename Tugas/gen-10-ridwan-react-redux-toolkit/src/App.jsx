@@ -6,7 +6,7 @@ function App() {
     <div>
       <h1>Tugas React Redux/Toolkit</h1>
       <br/>
-      hai dunia!
+      Assalamu'alaikum dunia!
       <br/>
       
 
