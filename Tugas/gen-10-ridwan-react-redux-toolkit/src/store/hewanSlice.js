@@ -4,24 +4,24 @@ const hewanSlice = createSlice({
 	name: 'hewan',
 	initialState: {
 		nama: 'paus',
-		jenis: 'mamalia'
+		kelas: 'mamalia'
 	},
 	reducers: {
 		ubahNama (state, action) {
 			state.nama = action.payload
 		},
-		ubahJenis (state, action) {
-			state.jenis = action.payload
+		ubahKelas (state, action) {
+			state.kelas = action.payload
 		},
 		ubahKeduanya (state, action) {
 			state.nama = action.payload.namaBaru,
-			state.jenis = action.payload.jenisBaru
+			state.kelas = action.payload.kelasBaru
 		}
 	}
 })
 
 // export const ubahNama = hewaanSlice.actions.ubahNama
-// export const ubahJenis = hewanSlice.actions.ubahJenis
-export const { ubahNama, ubahJenis, ubahKeduanya } = hewanSlice.actions
+// export const ubahKelas = hewanSlice.actions.ubahKelas
+export const { ubahNama, ubahKelas, ubahKeduanya } = hewanSlice.actions
 
 export default hewanSlice.reducer

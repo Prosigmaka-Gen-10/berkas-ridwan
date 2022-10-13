@@ -2,22 +2,22 @@ import { useSelector } from "react-redux"
 
 export default function CompA () {
 	// const nama = useSelector(state => state.hewan.nama)
-	// const jenis = useSelector(state => state.hewan.jenis)
-	const { nama, jenis } = useSelector(state => state.hewan)
+	// const kelas = useSelector(state => state.hewan.class)
+	const { nama, kelas } = useSelector(state => state.hewan)
 
 	return <>
 		I'm CompA <br />
 		nama: {nama} <br />
-		jenis: {jenis} <br />
+		class: {kelas} <br />
 	</>
 }
 
 const hewan = {
 	nama: 'paus',
-	jenis: 'mamalia'
+	kelas: 'mamalia'
 }
 
 // const nama = hewan.nama
-// const jenis = hewan.jenis
+// const kelas = hewan.kelas
 
-// const { nama, jenis } = hewan
+// const { nama, kelas } = hewan

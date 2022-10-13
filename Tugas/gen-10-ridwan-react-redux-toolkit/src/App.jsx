@@ -1,5 +1,7 @@
 import CompA from "./components/CompA"
 import CompB from "./components/CompB"
+import CompC from "./components/CompC"
+import CompD from "./components/CompD"
 
 function App() {
   return (
@@ -9,7 +11,6 @@ function App() {
       Assalamu'alaikum dunia!
       <br/>
       
-
       <br /><hr /><br />
 
       <CompA />
@@ -17,6 +18,14 @@ function App() {
       <br /><hr /><br />
 
       <CompB />
+
+      <br /><hr /><br />
+
+      <CompC />
+
+      <br /><hr /><br />
+
+      <CompD />
     </div>
   )
 }
